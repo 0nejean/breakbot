@@ -3,19 +3,63 @@
   --bs-primary-rgb: 0, 0, 0;
 }
 
+body {
+  font-family: "Sulphur Point";
+}
+
 .sec-g {
+  height: 50vh;
   padding: 100px 0;
 }
 
 .wrap {
-  padding-top: 61px;
+  padding-top: 5vh;
 }
 
 #header {
   padding: 0 30px;
-  height: 70px;
+  height: 5vh;
+  color: white;
+}
+#header .navbar {
+  height: 5vh;
+}
+#header .navbar .container-fluid {
+  height: 5vh;
+}
+#header .navbar .container-fluid .navbar-logo {
+  display: block;
+  text-indent: -9999px;
+  height: 1.875rem;
+  width: 5.9375rem;
+  background: url(../image/logo.png) 50% 50%/cover no-repeat;
+}
+#header .navbar .container-fluid .nav-link {
+  font-weight: 400;
+  color: white;
 }
 
 #jumbotron {
   height: 50vh;
+  background: url(../image/about_bg1.jpg) 77% 50%/cover no-repeat;
+}
+
+#ABOUT {
+  background: url(../image/about_bg2.jpg) 50% 50%/cover no-repeat;
+}
+#ABOUT h2 {
+  text-indent: -9999px;
+}
+
+#DISCOGRAPHY {
+  height: 100vh;
+  background: url(../image/discography_bg.jpg) 50% 50%/cover no-repeat;
+}
+#TOUR {
+  background: url(../image/tour_bg.jpg) 50% 50%/cover no-repeat;
+}
+
+#footer {
+  height: 5vh;
+  padding: 0 30px;
 }/*# sourceMappingURL=comm.css.map */

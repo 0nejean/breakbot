@@ -22,16 +22,19 @@
       content="http://www.mysite.com/article/article1.html"
     />
     <meta name="twitter:domain" content="사이트 명" />
-    <title>Onepage</title>
+    <title>BREAKBOT</title>
     <!-- reset using cdn-->
+    <link rel="icon" href="./dist/image/favicon.png" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <!-- google font - nanum gothic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
     <!-- icons -->
@@ -91,109 +94,50 @@
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <div class="wrap">
       <!-- * HEADER * -->
-      <header id="header" class="bg-light fixed-top">
-        <!-- <nav class="navbar navbar-expand-sm">
+      <header id="header" class="bg-black fixed-top">
+        <nav class="navbar navbar-expand-sm p-0">
           <div class="container-fluid">
             <h1>
-              <a class="navbar-brand" href="#">Logo</a>
+              <a class="navbar-logo" href="#main">breakbot</a>
             </h1>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapsibleNavbar"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="collapse navbar-collapse justify-content-end"
-              id="collapsibleNavbar"
-            >
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav> -->
-        <nav class="navbar navbar-expand-sm">
-          <div class="container-fluid">
-            <h1>
-              <a class="navbar-brand" href="#main">Logo</a>
-            </h1>
-            <!-- <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapsibleNavbar"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button> -->
-            <!-- <div
-              class="collapse navbar-collapse justify-content-end"
-              id="collapsibleNavbar"
-            > -->
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="#ABOUT">ABOUT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#SERVICE">SERVICE</a>
+                <a class="nav-link" href="#DISCOGRAPHY">DISCOGRAPHY</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#PORTFOLIO">PORTFOLIO</a>
+                <a class="nav-link" href="#SHOP">SHOP</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#CONTACT">CONTACT</a>
+                <a class="nav-link" href="#TOUR">TOUR</a>
               </li>
             </ul>
           </div>
-          <!-- </div> -->
         </nav>
       </header>
       <!-- * MAIN * -->
       <main id="main">
-        <!-- div under header & main TOP section-->
-        <div id="jumbotron" class="p-5 bg-primary text-white">
+        <!-- jumbotron-->
+        <div id="jumbotron" class="bg-primary text-white pt-5 pb-5">
           <div class="container">
-            <h1>BootStrap Example</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+            <h1></h1>
+            <p></p>
           </div>
         </div>
 
         <!-- section 1. ABOUT -->
         <section id="ABOUT" class="sec-g pt-5 pb-5">
           <div class="container">
-            <div class="title d-flex justify-content-center pt-5 pb-5">
+            <div class="title d-flex justify-content-center">
               <h2>ABOUT</h2>
             </div>
             <div class="row">
               <!-- sm = 768px 기준 -->
-              <div class="col-sm-8">
+              <div class="col-sm-4">
                 <!--aos setting ref https://github.com/michalsnik/aos -->
-                <h2
-                  data-aos="fade-up"
-                  data-aos-delay="50"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in-out"
-                  data-aos-mirror="true"
-                  data-aos-once="false"
-                  data-aos-anchor-placement="top-center"
-                >
-                  title
-                </h2>
+                <h2>title</h2>
                 <p
                   data-aos="fade-up"
                   data-aos-delay="50"
@@ -203,142 +147,260 @@
                   data-aos-once="false"
                   data-aos-anchor-placement="top-center"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  abc
                 </p>
               </div>
               <div class="col-sm-4">
-                <span class="glyphicon glyphicon-signal logo"></span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- section 2. SERVICE -->
-        <section id="SERVICE" class="sec-g bg-light pt-5 pb-5">
-          <div class="container">
-            <div class="title d-flex justify-content-center pt-5 pb-5">
-              <h2>SERVICE</h2>
-            </div>
-            <div class="row">
-              <div class="col-sm-4">
-                <h3>title</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-              <div class="col-sm-4">
-                <h3>title</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-              <div class="col-sm-4">
-                <h3>title</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                <p
+                  data-aos="fade-up"
+                  data-aos-delay="50"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-mirror="true"
+                  data-aos-once="false"
+                  data-aos-anchor-placement="top-center"
+                >
+                  abc
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- section 3. PORTFOLIO -->
-        <section id="PORTFOLIO" class="sec-g">
+        <!-- section 2. DISCOGRAPHY -->
+        <section id="DISCOGRAPHY" class="sec-g pt-5 pb-5">
+          <div class="title d-flex justify-content-center pt-3 pb-3">
+            <h2 class="fs-3 fw-bold">DISCOGRAPHY</h2>
+          </div>
+          <div class="container p-5">
+            <div class="row text-center">
+              <div class="col-sm-3">
+                <div class="thumbnail d-flex align-items-center flex-column">
+                  <a href="#">
+                    <img
+                      src="./dist/image/1.jpg"
+                      alt="#"
+                      width="250"
+                      height="250"
+                    />
+                  </a>
+                  <p class="pt-2">
+                    By Your Side
+                    <br />
+                    (Anniversary Edition)
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="thumbnail d-flex align-items-center flex-column">
+                  <a href="#">
+                    <img
+                      src="./dist/image/2.jpg"
+                      alt="#"
+                      width="250"
+                      height="250"
+                    />
+                  </a>
+                  <p class="pt-3">Another You</p>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="thumbnail d-flex align-items-center flex-column">
+                  <a href="#">
+                    <img
+                      src="./dist/image/3.jpg"
+                      alt="#"
+                      width="250"
+                      height="250"
+                    />
+                  </a>
+                  <p class="pt-3">Still Waters</p>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="thumbnail d-flex align-items-center flex-column">
+                  <a href="#">
+                    <img
+                      src="./dist/image/4.jpg"
+                      alt="#"
+                      width="250"
+                      height="250"
+                    />
+                  </a>
+                  <p class="pt-3">By Your Side</p>
+                </div>
+              </div>
+            </div>
+            <div class="row text-center">
+              <div class="col-sm-3">
+                <img
+                  src="./dist/image/icon.png"
+                  alt="#"
+                  width="250"
+                  height="250"
+                />
+              </div>
+              <div class="col-sm-3">
+                <div class="thumbnail d-flex align-items-center flex-column">
+                  <a href="#">
+                    <img
+                      src="./dist/image/5.jpg"
+                      alt="#"
+                      width="250"
+                      height="250"
+                    />
+                  </a>
+                  <p class="pt-3">One Out of Two</p>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="thumbnail d-flex align-items-center flex-column">
+                  <a href="#">
+                    <img
+                      src="./dist/image/6.jpg"
+                      alt="#"
+                      width="250"
+                      height="250"
+                    />
+                  </a>
+                  <p class="pt-3">Fantasy</p>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="thumbnail d-flex align-items-center flex-column">
+                  <a href="#">
+                    <img
+                      src="./dist/image/7.jpg"
+                      alt="#"
+                      width="250"
+                      height="250"
+                    />
+                  </a>
+                  <p class="pt-3">Baby I'm Yours</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- section 3. SHOP -->
+        <section id="SHOP" class="sec-g bg-light pt-5 pb-5">
           <div class="container">
-            <div class="title d-flex justify-content-center pt-5 pb-5">
-              <h2>PORTFOLIO</h2>
+            <div class="title d-flex justify-content-center">
+              <h2 class="fs-3 fw-bold">SHOP</h2>
             </div>
             <div class="row">
               <!-- sm = 768px 기준 -->
               <div class="col-sm-4">
-                <div class="thumbnail">
-                  <img src="#" alt="#" width="400" height="300" />
-                  <p>A</p>
+                <div class="thumbnail d-flex align-items-center flex-column">
+                  <a href="#">
+                    <img
+                      src="./dist/image/cap.png"
+                      alt="#"
+                      width="300"
+                      height="300"
+                    />
+                  </a>
+                  <p>'Breakbot' Cap</p>
+                  <p>USD 25.00</p>
                 </div>
               </div>
               <div class="col-sm-4">
-                <div class="thumbnail">
-                  <img src="#" alt="#" width="400" height="300" />
-                  <p>B</p>
+                <div class="thumbnail d-flex align-items-center flex-column">
+                  <a href="#">
+                    <img
+                      src="./dist/image/t1.png"
+                      alt="#"
+                      width="300"
+                      height="300"
+                    />
+                  </a>
+                  <p>'Remedy' T-shirt</p>
+                  <p>USD 30.00</p>
                 </div>
               </div>
               <div class="col-sm-4">
-                <div class="thumbnail">
-                  <img src="#" alt="#" width="400" height="300" />
-                  <p>C</p>
+                <div class="thumbnail d-flex align-items-center flex-column">
+                  <a href="#">
+                    <img
+                      src="./dist/image/t2.png"
+                      alt="#"
+                      width="300"
+                      height="300"
+                    />
+                  </a>
+                  <p>'Baby I'm Yours' T-shirt</p>
+                  <p>USD 30.00</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- section 4. CONTACT -->
-        <section id="CONTACT" class="sec-g bg-light pt-5 pb-5">
+        <!-- section 4. TOUR -->
+        <section id="TOUR" class="sec-g pt-5 pb-5">
+          <div class="title d-flex justify-content-center pb-3">
+            <h2 class="fs-3 fw-bold">TOUR</h2>
+          </div>
           <div class="container">
-            <div class="title d-flex justify-content-center pt-5 pb-5">
-              <h2>CONTACT</h2>
-            </div>
             <div class="row">
-              <div class="col-sm-4">
-                <h3>title</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-              <div class="col-sm-4">
-                <h3>title</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-              <div class="col-sm-4">
-                <h3>title</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
+              <ul class="col-sm-6 d-flex flex-column">
+                <li class="tour_li d-flex align-items-center pb-5">
+                  <time class="time text-center px-5">
+                    <h4 class="pb-1">OCT</h4>
+                    <h1 class="pt-1 mb-0">7</h1>
+                  </time>
+                  <div class="date">
+                    <h4>Seoul</h4>
+                    <p>moor fireworks celebration feat.Breakbot & Irfane</p>
+                    <span>Sat, Oct 7 • 4:00 PM</span>
+                  </div>
+                </li>
+                <li class="tour_li d-flex align-items-center pb-5">
+                  <time class="time text-center px-5">
+                    <h4 class="pb-1">OCT</h4>
+                    <h1 class="pt-1 mb-0">8</h1>
+                  </time>
+                  <div class="date">
+                    <h4>新宿区</h4>
+                    <p>Breakbot & Irfane, YOSA & TAAR and Haruy</p>
+                    <span>Sun, Oct 11 • 11:00 PM</span>
+                  </div>
+                </li>
+              </ul>
+              <ul class="col-sm-6 d-flex flex-column">
+                <li class="tour_li d-flex align-items-center pb-5">
+                  <time class="time text-center px-5">
+                    <h4 class="pb-1">OCT</h4>
+                    <h1 class="pt-1 mb-0">7</h1>
+                  </time>
+                  <div class="date">
+                    <h4>Seoul</h4>
+                    <p>moor fireworks celebration feat.Breakbot & Irfane</p>
+                    <span>Sat, Oct 7 • 4:00 PM</span>
+                  </div>
+                </li>
+                <li class="tour_li d-flex align-items-center pb-5">
+                  <time class="time text-center px-5">
+                    <h4 class="pb-1">OCT</h4>
+                    <h1 class="pt-1 mb-0">8</h1>
+                  </time>
+                  <div class="date">
+                    <h4>新宿区</h4>
+                    <p>Breakbot & Irfane, YOSA & TAAR and Haruy</p>
+                    <span>Sun, Oct 11 • 11:00 PM</span>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
-        <!-- Image of location/map -->
-        <img
-          src="/w3images/map.jpg"
-          class="w3-image w3-greyscale-min"
-          style="width: 100%"
-        />
       </main>
       <!-- * FOOTER * -->
-      <footer class="container-fluid text-center">
+      <footer id="footer" class="container-fluid bg-black">
         <a href="#myPage" title="To Top">
           <span class="glyphicon glyphicon-chevron-up"></span>
         </a>
-        <p>
-          Bootstrap Theme Made By
-          <a href="https://www.w3schools.com" title="Visit w3schools"
-            >www.w3schools.com</a
-          >
-        </p>
       </footer>
     </div>
 
