@@ -1,0 +1,21 @@
+:root {
+  --bs-primary: rgb(0, 0, 0);
+  --bs-primary-rgb: 0, 0, 0;
+}
+
+.sec-g {
+  padding: 100px 0;
+}
+
+.wrap {
+  padding-top: 61px;
+}
+
+#header {
+  padding: 0 30px;
+  height: 70px;
+}
+
+#jumbotron {
+  height: 50vh;
+}/*# sourceMappingURL=comm.css.map */

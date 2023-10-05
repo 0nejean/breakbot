@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+:root {
+  --bs-primary: rgb(0, 0, 0);
+  --bs-primary-rgb: 0, 0, 0;
+}
+
+$md: 768px;
+
+.sec-g {
+  padding: 100px 0;
+}
+.wrap {
+  padding-top: 61px;
+}
+// @media screen and (max-width: $md) {
+//   .wrap {
+//     padding-top: 71px;
+//   }
+// }
+#header {
+  padding: 0 30px;
+  height: 70px;
+}
+#jumbotron {
+  height: 50vh;
+}
