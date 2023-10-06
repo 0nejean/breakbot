@@ -7,12 +7,9 @@
 
 body {
   font-family: "Sulphur Point";
+  cursor: url("../image/cursor.cur"), auto;
 }
 
-.sec-g {
-  height: 50vh;
-  padding: 100px 0;
-}
 .wrap {
   padding-top: 5vh;
 }
@@ -40,6 +37,12 @@ body {
     }
   }
 }
+
+.sec-g {
+  height: 50vh;
+  padding: 100px 0;
+}
+
 .checkboard {
   text-indent: -9999px;
   height: 20vh;
@@ -165,14 +168,14 @@ body {
       align-items: flex-end;
 
       .album_p {
-        font-size: 50px;
+        font-size: 40px;
         color: transparent;
         -webkit-text-stroke: 1.5px;
         -webkit-text-stroke-color: white;
         font-weight: 700;
       }
       .album_h3 {
-        font-size: 50px;
+        font-size: 40px;
         color: white;
         font-weight: 700;
       }
@@ -231,8 +234,20 @@ body {
 }
 
 #DISCOGRAPHY {
+  position: relative;
   height: 100vh;
   background: url(../image/discography_bg.jpg) 50% 50% / cover no-repeat;
+  .test {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-indent: -9999px;
+    width: 1903px;
+    height: 963px;
+    background: url(../image/test.png) 0 0 / cover no-repeat;
+    opacity: 0.2;
+  }
 }
 #BREAKPOINT_BOTTOM {
   color: white;
