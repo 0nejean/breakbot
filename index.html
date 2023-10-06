@@ -29,12 +29,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <!-- google font - nanum gothic -->
+    <!-- google font - sulphur point & rubik glitch -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap"
       rel="stylesheet"
     />
     <!-- icons -->
@@ -119,54 +122,86 @@
       </header>
       <!-- * MAIN * -->
       <main id="main">
+        <div class="checkboard">checkboard area</div>
         <!-- jumbotron-->
         <div id="jumbotron" class="bg-primary text-white pt-5 pb-5">
           <div class="container">
-            <h1></h1>
-            <p></p>
+            <div class="tv_font">
+              &nbsp; And it makes me wonder What is like To be by your side And
+              it makes me wonder What is like To be by your side And it makes me
+              wonder What is like To be by your side And it makes me wonder What
+              is like To be by your side And it makes me wonder What is like To
+              be by your side And it makes me wonder What is like To be by your
+              side And it makes me wonder What is like To be by your side
+            </div>
+            <div class="tv_img">tv_img</div>
           </div>
         </div>
 
         <!-- section 1. ABOUT -->
         <section id="ABOUT" class="sec-g pt-5 pb-5">
-          <div class="container">
-            <div class="title d-flex justify-content-center">
-              <h2>ABOUT</h2>
-            </div>
+          <div
+            class="container_about d-flex justify-content-center align-items-center"
+          >
+            <h2>ABOUT</h2>
             <div class="row">
               <!-- sm = 768px 기준 -->
-              <div class="col-sm-4">
+              <div class="edbanger col-sm-6 text-white">
                 <!--aos setting ref https://github.com/michalsnik/aos -->
-                <h2>title</h2>
                 <p
-                  data-aos="fade-up"
-                  data-aos-delay="50"
-                  data-aos-duration="1000"
+                  data-aos="fade-down"
+                  data-aos-delay="30"
+                  data-aos-duration="500"
                   data-aos-easing="ease-in-out"
                   data-aos-mirror="true"
                   data-aos-once="false"
                   data-aos-anchor-placement="top-center"
                 >
-                  abc
+                  EDBANGER
                 </p>
               </div>
-              <div class="col-sm-4">
+              <div class="records col-sm-6 text-white">
                 <p
                   data-aos="fade-up"
-                  data-aos-delay="50"
-                  data-aos-duration="1000"
+                  data-aos-delay="30"
+                  data-aos-duration="500"
                   data-aos-easing="ease-in-out"
                   data-aos-mirror="true"
                   data-aos-once="false"
                   data-aos-anchor-placement="top-center"
                 >
-                  abc
+                  RECORDS
                 </p>
               </div>
             </div>
           </div>
         </section>
-
+        <!-- BREAKPOINT TOP -->
+        <div id="BREAKPOINT_TOP">
+          &nbsp; BreakBot BreakBot BreakBot BreakBot BreakBot BreakBot BreakBot
+          BreakBot BreakBot BreakBot BreakBot BreakBot BreakBot BreakBot
+          BreakBot BreakBot BreakBot BreakBot
+        </div>
+        <!-- album -->
+        <div class="album">
+          <ul class="album_ul">
+            <li class="album_li_img">
+              <div class="album_img" href="#">album_img</div>
+            </li>
+            <li class="album_li_txt">
+              <p class="album_p">Latest Release</p>
+              <h3 class="album_h3">By Your Side (Anniversary Edition)</h3>
+              <span class="album_span">22 songs</span>
+            </li>
+          </ul>
+        </div>
+        <!-- M/V -->
+        <section class="youtube">
+          <div class="youtube__area">
+            <div id="player1" class="player"></div>
+          </div>
+          <div class="youtube__cover"></div>
+        </section>
         <!-- section 2. DISCOGRAPHY -->
         <section id="DISCOGRAPHY" class="sec-g pt-5 pb-5">
           <div class="title d-flex justify-content-center pt-3 pb-3">
@@ -342,59 +377,57 @@
           <div class="title d-flex justify-content-center pb-3">
             <h2 class="fs-3 fw-bold">TOUR</h2>
           </div>
-          <div class="container">
-            <div class="row">
-              <ul class="col-sm-6 d-flex flex-column">
-                <li class="tour_li d-flex align-items-center pb-5">
-                  <time class="time text-center px-5">
-                    <h4 class="pb-1">OCT</h4>
-                    <h1 class="pt-1 mb-0">7</h1>
-                  </time>
-                  <div class="date">
-                    <h4>Seoul</h4>
-                    <p>moor fireworks celebration feat.Breakbot & Irfane</p>
-                    <span>Sat, Oct 7 • 4:00 PM</span>
-                  </div>
-                </li>
-                <li class="tour_li d-flex align-items-center pb-5">
-                  <time class="time text-center px-5">
-                    <h4 class="pb-1">OCT</h4>
-                    <h1 class="pt-1 mb-0">8</h1>
-                  </time>
-                  <div class="date">
-                    <h4>新宿区</h4>
-                    <p>Breakbot & Irfane, YOSA & TAAR and Haruy</p>
-                    <span>Sun, Oct 11 • 11:00 PM</span>
-                  </div>
-                </li>
-              </ul>
-              <ul class="col-sm-6 d-flex flex-column">
-                <li class="tour_li d-flex align-items-center pb-5">
-                  <time class="time text-center px-5">
-                    <h4 class="pb-1">OCT</h4>
-                    <h1 class="pt-1 mb-0">7</h1>
-                  </time>
-                  <div class="date">
-                    <h4>Seoul</h4>
-                    <p>moor fireworks celebration feat.Breakbot & Irfane</p>
-                    <span>Sat, Oct 7 • 4:00 PM</span>
-                  </div>
-                </li>
-                <li class="tour_li d-flex align-items-center pb-5">
-                  <time class="time text-center px-5">
-                    <h4 class="pb-1">OCT</h4>
-                    <h1 class="pt-1 mb-0">8</h1>
-                  </time>
-                  <div class="date">
-                    <h4>新宿区</h4>
-                    <p>Breakbot & Irfane, YOSA & TAAR and Haruy</p>
-                    <span>Sun, Oct 11 • 11:00 PM</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
+          <div class="tour_container">
+            <ul class="tour_ul_g tour_Aul">
+              <li class="tour_li">
+                <div class="cal">OCT <br />7</div>
+                <div class="date">
+                  <h4>Seoul</h4>
+                  <p>
+                    moor fireworks celebration <br />
+                    feat. Breakbot &#38; Irfane
+                  </p>
+                  <span>Sat, Oct 7 • 4:00 PM</span>
+                </div>
+              </li>
+              <li class="tour_li">
+                <div class="cal">OCT <br />8</div>
+                <div class="date">
+                  <h4>新宿区</h4>
+                  <p>
+                    Breakbot &#38; Irfane, <br />
+                    YOSA &#38; TAAR and Haruy
+                  </p>
+                  <span>Sun, Oct 11 • 11:00 PM</span>
+                </div>
+              </li>
+            </ul>
+            <ul class="tour_ul_g tour_Bul">
+              <li class="tour_li">
+                <div class="cal">Nov<br />18</div>
+                <div class="date">
+                  <h4>Reims</h4>
+                  <p>Busy P with Breakbot and Irfane</p>
+                  <span>Sat, Nov 18 • 9:00 PM</span>
+                </div>
+              </li>
+              <li class="tour_li">
+                <div class="cal">Dec <br />16</div>
+                <div class="date">
+                  <h4>Sydney</h4>
+                  <p>Breakbot</p>
+                  <span>Sat, Dec 16 • 09:00 PM</span>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
+        <!-- BREAKPOINT BOTTOM -->
+        <div id="BREAKPOINT_BOTTOM">
+          &nbsp; BreakBot BreakBot BreakBot BreakBot BreakBot BreakBot BreakBot
+          BreakBot BreakBot BreakBot BreakBot BreakBot BreakBot BreakBot
+          BreakBot BreakBot BreakBot BreakBot
+        </div>
       </main>
       <!-- * FOOTER * -->
       <footer id="footer" class="container-fluid bg-black">
