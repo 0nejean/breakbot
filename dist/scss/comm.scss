@@ -6,8 +6,8 @@
 }
 
 body {
-  font-family: "Sulphur Point";
   cursor: url("../image/cursor.cur"), auto;
+  font-family: "Sulphur Point";
 }
 
 .wrap {
@@ -40,7 +40,7 @@ body {
 
 .sec-g {
   height: 50vh;
-  padding: 100px 0;
+  padding: 6.25rem 0;
 }
 
 .checkboard {
@@ -55,9 +55,9 @@ body {
   overflow: hidden;
   .tv_font {
     position: absolute;
-    top: 21%;
+    top: 25%;
     font-weight: 700;
-    font-size: 75px;
+    font-size: 4.375rem;
     transition: 0.3s;
     animation: textLoop 250s linear infinite;
   }
@@ -76,8 +76,8 @@ body {
     }
   }
   .tv_img {
-    width: 410px;
-    height: 200px;
+    width: 25.625rem;
+    height: 12.5rem;
     z-index: 1;
     text-indent: -9999px;
     background: url(../image/tv.jpg) 50% 50% / cover no-repeat;
@@ -89,20 +89,22 @@ body {
 #ABOUT {
   font-family: "Rubik Glitch", cursive;
   background: url(../image/about_bg2.jpg) 50% 50% / cover no-repeat;
-  .container_about {
-    height: 100%;
-    h2 {
-      text-indent: -9999px;
-    }
+  color: white;
+  position: relative;
+  h2 {
+    text-indent: -9999px;
+  }
+  .about_txt {
+    font-size: 6.25rem;
     .edbanger {
-      padding-right: 18.75rem;
+      position: absolute;
+      top: 30%;
+      left: 5%;
     }
     .records {
-      padding-left: 25rem;
-    }
-    p {
-      font-size: 100px;
-      // text-align: center;
+      position: absolute;
+      top: 30%;
+      right: 5%;
     }
   }
 }
@@ -154,33 +156,33 @@ body {
     }
     .album_li_img {
       width: 50%;
-      height: 482px;
+      height: 30.125rem;
       text-indent: -9999px;
       background: url(../image/album_front2.png) 50% 50% / cover no-repeat;
     }
     .album_li_txt {
       padding: 0 2% 2% 0;
       width: 50%;
-      height: 482px;
+      height: 30.125rem;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       align-items: flex-end;
 
       .album_p {
-        font-size: 40px;
+        font-size: 2.5rem;
         color: transparent;
-        -webkit-text-stroke: 1.5px;
+        -webkit-text-stroke: 0.0938rem;
         -webkit-text-stroke-color: white;
         font-weight: 700;
       }
       .album_h3 {
-        font-size: 40px;
+        font-size: 2.5rem;
         color: white;
         font-weight: 700;
       }
       .album_span {
-        font-size: 20px;
+        font-size: 1.25rem;
         color: white;
         font-weight: 300;
       }
@@ -189,12 +191,12 @@ body {
 }
 .youtube {
   position: relative;
-  height: 700px;
+  height: 43.75rem;
   background-color: #333;
   overflow: hidden;
 
   .youtube__area {
-    width: 1920px;
+    width: 120rem;
     position: absolute;
 
     /* 16비율 */
@@ -237,21 +239,66 @@ body {
   position: relative;
   height: 100vh;
   background: url(../image/discography_bg.jpg) 50% 50% / cover no-repeat;
-  .test {
+  .movinicon {
     z-index: 2;
     position: absolute;
     top: 0;
     left: 0;
     text-indent: -9999px;
-    width: 1903px;
-    height: 963px;
+    width: 100%;
+    height: 60.1875rem;
     background: url(../image/test.png) 0 0 / cover no-repeat;
     opacity: 0.2;
   }
 }
+#coverflow {
+  display: flex;
+  position: relative;
+  height: 50vh;
+  background: #000;
+  .coverflow_h2 {
+    text-indent: -9999px;
+  }
+  .coverflow_p {
+    position: absolute;
+    top: 15%;
+    left: 3.4%;
+    color: white;
+    font-weight: 700;
+    font-size: 6.875rem;
+    color: transparent;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: white;
+  }
+  .swiper {
+    width: 100%;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 18.75rem;
+    height: 18.75rem;
+    text-align: center;
+    color: white;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    background: white;
+  }
+}
+
 #BREAKPOINT_BOTTOM {
   color: white;
-  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke: 0.0313rem;
   -webkit-text-stroke-color: black;
   white-space: nowrap;
   overflow: hidden;
@@ -259,7 +306,7 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 1.875rem;
   height: 5vh;
   animation: blink-effect 1.5s step-end infinite;
   @keyframes blink-effect {
@@ -307,5 +354,40 @@ body {
 
 #footer {
   height: 5vh;
-  padding: 0 30px;
 }
+
+// @media (max-width: 1440px) {
+//   #ABOUT .about_txt .edbanger {
+//     position: absolute;
+//     top: 30%;
+//     left: 2%;
+//   }
+//   #ABOUT .about_txt .records {
+//     position: absolute;
+//     top: 30%;
+//     right: 2%;
+//   }
+//   .album .album_ul .album_li_img {
+//     background: url(../image/album_front2.png) 107% 50% / cover no-repeat;
+//   }
+// }
+// @media (max-width: 1024px) {
+//   #ABOUT .about_txt {
+//     font-size: 4.375rem;
+//   }
+//   #ABOUT .about_txt .edbanger {
+//     top: 40%;
+//   }
+//   #ABOUT .about_txt .records {
+//     top: 40%;
+//   }
+//   .album .album_ul .album_li_img {
+//     background: url(../image/album_front2.png) 120% 50% / cover no-repeat;
+//   }
+//   .album .album_ul .album_li_txt .album_p {
+//     font-size: 2rem;
+//   }
+//   .album .album_ul .album_li_txt .album_h3 {
+//     font-size: 2rem;
+//   }
+// }

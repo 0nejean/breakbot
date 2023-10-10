@@ -1,5 +1,6 @@
 const headerEl = document.querySelector("#header");
 
+// youtube
 // // 페이지에 스크롤 이벤트 추가
 // window.addEventListener(
 //   "scroll",
@@ -49,3 +50,21 @@ function onYouTubePlayerAPIReady() {
     },
   });
 }
+
+// coverflow
+var swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});

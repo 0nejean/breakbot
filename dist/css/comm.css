@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: "Sulphur Point";
   cursor: url("../image/cursor.cur"), auto;
+  font-family: "Sulphur Point";
 }
 
 .wrap {
@@ -38,7 +38,7 @@ body {
 
 .sec-g {
   height: 50vh;
-  padding: 100px 0;
+  padding: 6.25rem 0;
 }
 
 .checkboard {
@@ -55,9 +55,9 @@ body {
 }
 #jumbotron .tv_font {
   position: absolute;
-  top: 21%;
+  top: 25%;
   font-weight: 700;
-  font-size: 75px;
+  font-size: 4.375rem;
   transition: 0.3s;
   animation: textLoop 250s linear infinite;
 }
@@ -73,8 +73,8 @@ body {
   }
 }
 #jumbotron .tv_img {
-  width: 410px;
-  height: 200px;
+  width: 25.625rem;
+  height: 12.5rem;
   z-index: 1;
   text-indent: -9999px;
   background: url(../image/tv.jpg) 50% 50%/cover no-repeat;
@@ -86,21 +86,24 @@ body {
 #ABOUT {
   font-family: "Rubik Glitch", cursive;
   background: url(../image/about_bg2.jpg) 50% 50%/cover no-repeat;
+  color: white;
+  position: relative;
 }
-#ABOUT .container_about {
-  height: 100%;
-}
-#ABOUT .container_about h2 {
+#ABOUT h2 {
   text-indent: -9999px;
 }
-#ABOUT .container_about .edbanger {
-  padding-right: 18.75rem;
+#ABOUT .about_txt {
+  font-size: 6.25rem;
 }
-#ABOUT .container_about .records {
-  padding-left: 25rem;
+#ABOUT .about_txt .edbanger {
+  position: absolute;
+  top: 30%;
+  left: 5%;
 }
-#ABOUT .container_about p {
-  font-size: 100px;
+#ABOUT .about_txt .records {
+  position: absolute;
+  top: 30%;
+  right: 5%;
 }
 
 #BREAKPOINT_TOP {
@@ -154,45 +157,45 @@ body {
 }
 .album .album_ul .album_li_img {
   width: 50%;
-  height: 482px;
+  height: 30.125rem;
   text-indent: -9999px;
   background: url(../image/album_front2.png) 50% 50%/cover no-repeat;
 }
 .album .album_ul .album_li_txt {
   padding: 0 2% 2% 0;
   width: 50%;
-  height: 482px;
+  height: 30.125rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
 }
 .album .album_ul .album_li_txt .album_p {
-  font-size: 40px;
+  font-size: 2.5rem;
   color: transparent;
-  -webkit-text-stroke: 1.5px;
+  -webkit-text-stroke: 0.0938rem;
   -webkit-text-stroke-color: white;
   font-weight: 700;
 }
 .album .album_ul .album_li_txt .album_h3 {
-  font-size: 40px;
+  font-size: 2.5rem;
   color: white;
   font-weight: 700;
 }
 .album .album_ul .album_li_txt .album_span {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: white;
   font-weight: 300;
 }
 
 .youtube {
   position: relative;
-  height: 700px;
+  height: 43.75rem;
   background-color: #333;
   overflow: hidden;
 }
 .youtube .youtube__area {
-  width: 1920px;
+  width: 120rem;
   position: absolute;
   /* 16비율 */
   left: 50%;
@@ -231,21 +234,63 @@ body {
   height: 100vh;
   background: url(../image/discography_bg.jpg) 50% 50%/cover no-repeat;
 }
-#DISCOGRAPHY .test {
+#DISCOGRAPHY .movinicon {
   z-index: 2;
   position: absolute;
   top: 0;
   left: 0;
   text-indent: -9999px;
-  width: 1903px;
-  height: 963px;
+  width: 100%;
+  height: 60.1875rem;
   background: url(../image/test.png) 0 0/cover no-repeat;
   opacity: 0.2;
 }
 
+#coverflow {
+  display: flex;
+  position: relative;
+  height: 50vh;
+  background: #000;
+}
+#coverflow .coverflow_h2 {
+  text-indent: -9999px;
+}
+#coverflow .coverflow_p {
+  position: absolute;
+  top: 15%;
+  left: 3.4%;
+  color: white;
+  font-weight: 700;
+  font-size: 6.875rem;
+  color: transparent;
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: white;
+}
+#coverflow .swiper {
+  width: 100%;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+#coverflow .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 18.75rem;
+  height: 18.75rem;
+  text-align: center;
+  color: white;
+}
+#coverflow .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+#coverflow .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+#coverflow .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  background: white;
+}
+
 #BREAKPOINT_BOTTOM {
   color: white;
-  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke: 0.0313rem;
   -webkit-text-stroke-color: black;
   white-space: nowrap;
   overflow: hidden;
@@ -253,7 +298,7 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 1.875rem;
   height: 5vh;
   animation: blink-effect 1.5s step-end infinite;
 }
@@ -300,5 +345,4 @@ body {
 
 #footer {
   height: 5vh;
-  padding: 0 30px;
 }/*# sourceMappingURL=comm.css.map */

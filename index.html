@@ -62,6 +62,11 @@
     />
     <!-- aos.css (external css) -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <!-- comm.css internal이 항상 마지막에 있어야 함.-->
     <link href="./dist/css/comm.css" rel="stylesheet" />
 
@@ -88,6 +93,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- comm.js -->
     <!-- defer를 넣은 이유는 위에서 아래로 읽어오는데 comm.js를 마지막으로 읽어달라는 의미 -->
     <script defer src="./dist/js/comm.js"></script>
@@ -120,6 +127,7 @@
           </div>
         </nav>
       </header>
+
       <!-- * MAIN * -->
       <main id="main">
         <div class="checkboard">checkboard area</div>
@@ -140,49 +148,44 @@
 
         <!-- section 1. ABOUT -->
         <section id="ABOUT" class="sec-g pt-5 pb-5">
-          <div
-            class="container_about d-flex justify-content-center align-items-center"
-          >
-            <h2>ABOUT</h2>
-            <div class="row">
-              <!-- sm = 768px 기준 -->
-              <div class="edbanger col-sm-6 text-white">
-                <!--aos setting ref https://github.com/michalsnik/aos -->
-                <p
-                  data-aos="fade-down"
-                  data-aos-delay="30"
-                  data-aos-duration="500"
-                  data-aos-easing="ease-in-out"
-                  data-aos-mirror="true"
-                  data-aos-once="false"
-                  data-aos-anchor-placement="top-center"
-                >
-                  EDBANGER
-                </p>
-              </div>
-              <div class="records col-sm-6 text-white">
-                <p
-                  data-aos="fade-up"
-                  data-aos-delay="30"
-                  data-aos-duration="500"
-                  data-aos-easing="ease-in-out"
-                  data-aos-mirror="true"
-                  data-aos-once="false"
-                  data-aos-anchor-placement="top-center"
-                >
-                  RECORDS
-                </p>
-              </div>
-            </div>
+          <h2>ABOUT</h2>
+          <div class="about_txt">
+            <p
+              class="edbanger"
+              data-aos="fade-down"
+              data-aos-delay="30"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            >
+              EDBANGER
+            </p>
+
+            <p
+              class="records"
+              data-aos="fade-up"
+              data-aos-delay="30"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="false"
+              data-aos-anchor-placement="top-center"
+            >
+              RECORDS
+            </p>
           </div>
         </section>
+
         <!-- BREAKPOINT TOP -->
         <div id="BREAKPOINT_TOP">
           &nbsp; BreakBot BreakBot BreakBot BreakBot BreakBot BreakBot BreakBot
           BreakBot BreakBot BreakBot BreakBot BreakBot BreakBot BreakBot
           BreakBot BreakBot BreakBot BreakBot
         </div>
-        <!-- album -->
+
+        <!-- ALBUM -->
         <div class="album">
           <ul class="album_ul">
             <li class="album_li_img">
@@ -234,19 +237,20 @@
           </div>
           <div class="youtube__cover"></div>
         </section>
+
         <!-- section 2. DISCOGRAPHY -->
         <section id="DISCOGRAPHY" class="sec-g pt-5 pb-5">
           <div
-            class="test"
+            class="movinicon"
             data-aos="slide-up"
-            data-aos-delay="300"
-            data-aos-duration="1500"
+            data-aos-delay="200"
+            data-aos-duration="500"
             data-aos-easing="ease-out-quart"
             data-aos-mirror="true"
-            data-aos-once="true"
+            data-aos-once="false"
             data-aos-anchor-placement="top-bottom"
           >
-            test
+            movinicon
           </div>
           <div class="title d-flex justify-content-center pt-3 pb-3">
             <h2 class="fs-3 fw-bold">DISCOGRAPHY</h2>
@@ -362,6 +366,56 @@
           </div>
         </section>
 
+        <!-- section 2.5 COVERFLOW-->
+        <section id="coverflow">
+          <h2 class="coverflow_h2">COVERFLOW</h2>
+          <p class="coverflow_p">SINGLE <br />&#38; EP</p>
+          <!-- Swiper -->
+          <div
+            class="swiper mySwiper"
+            data-aos="fade-in"
+            data-aos-delay="200"
+            data-aos-duration="500"
+            data-aos-easing="linear"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-bottom"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./dist/image/cf1.webp" />
+                Remedy - EP
+              </div>
+              <div class="swiper-slide">
+                <img src="./dist/image/cf2.webp" />
+                Still Got It (Breakbot's Club
+                <br />des Vedettes Remix) - Single
+              </div>
+              <div class="swiper-slide">
+                <img src="./dist/image/cf3.webp" />
+                Shake (Breakbot Remix) - Single
+              </div>
+              <div class="swiper-slide">
+                <img src="./dist/image/cf4.webp" />
+                Be Mine Tonight - Single
+              </div>
+              <div class="swiper-slide">
+                <img src="./dist/image/cf5.webp" />
+                2Good4Me (Fatima Yamaha Remix - Mixed) - Single
+              </div>
+              <div class="swiper-slide">
+                <img src="./dist/image/cf6.webp" />
+                2Good4Me / My Toy (Remixes) - EP
+              </div>
+              <div class="swiper-slide">
+                <img src="./dist/image/cf7.webp" />
+                You Should Know (feat. Ruckazoid) - EP
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+
         <!-- section 3. SHOP -->
         <section id="SHOP" class="sec-g bg-light pt-5 pb-5">
           <div class="container">
@@ -466,6 +520,7 @@
             </ul>
           </div>
         </section>
+
         <!-- BREAKPOINT BOTTOM -->
         <div id="BREAKPOINT_BOTTOM">
           &nbsp; BreakBot BreakBot BreakBot BreakBot BreakBot BreakBot BreakBot
@@ -474,10 +529,11 @@
         </div>
       </main>
       <!-- * FOOTER * -->
-      <footer id="footer" class="container-fluid bg-black">
-        <a href="#myPage" title="To Top">
-          <span class="glyphicon glyphicon-chevron-up"></span>
-        </a>
+      <footer
+        id="footer"
+        class="bg-black text-white text-center font-weight-lighter pt-2 pb-1"
+      >
+        <span class="footer_span">&#169; 2023 BreakBot</span>
       </footer>
     </div>
 
