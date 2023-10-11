@@ -356,38 +356,220 @@ body {
   height: 5vh;
 }
 
-// @media (max-width: 1440px) {
-//   #ABOUT .about_txt .edbanger {
-//     position: absolute;
-//     top: 30%;
-//     left: 2%;
-//   }
-//   #ABOUT .about_txt .records {
-//     position: absolute;
-//     top: 30%;
-//     right: 2%;
-//   }
-//   .album .album_ul .album_li_img {
-//     background: url(../image/album_front2.png) 107% 50% / cover no-repeat;
-//   }
-// }
-// @media (max-width: 1024px) {
-//   #ABOUT .about_txt {
-//     font-size: 4.375rem;
-//   }
-//   #ABOUT .about_txt .edbanger {
-//     top: 40%;
-//   }
-//   #ABOUT .about_txt .records {
-//     top: 40%;
-//   }
-//   .album .album_ul .album_li_img {
-//     background: url(../image/album_front2.png) 120% 50% / cover no-repeat;
-//   }
-//   .album .album_ul .album_li_txt .album_p {
-//     font-size: 2rem;
-//   }
-//   .album .album_ul .album_li_txt .album_h3 {
-//     font-size: 2rem;
-//   }
-// }
+@media (max-width: 1440px) {
+  #jumbotron .tv_img {
+    width: 20.625rem;
+    height: 11.5rem;
+    top: 3%;
+    left: 78%;
+  }
+  #ABOUT .about_txt .edbanger {
+    position: absolute;
+    top: 30%;
+    left: 2%;
+  }
+  #ABOUT .about_txt .records {
+    position: absolute;
+    top: 30%;
+    right: 2%;
+  }
+  .album .album_ul .album_li_img {
+    background: url(../image/album_front2.png) 107% 50% / cover no-repeat;
+  }
+}
+
+@media (max-width: 1024px) {
+  #jumbotron .tv_img {
+    left: 70%;
+  }
+  #ABOUT .about_txt {
+    font-size: 4.375rem;
+  }
+  #ABOUT .about_txt .edbanger {
+    top: 40%;
+  }
+  #ABOUT .about_txt .records {
+    top: 40%;
+  }
+  .album .album_ul .album_li_img {
+    background: url(../image/album_front2.png) 120% 50% / cover no-repeat;
+  }
+  .album .album_ul .album_li_txt .album_p {
+    font-size: 2rem;
+  }
+  .album .album_ul .album_li_txt .album_h3 {
+    font-size: 2rem;
+  }
+  #DISCOGRAPHY {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 12.5rem;
+      height: 12.5rem;
+    }
+  }
+  #coverflow .coverflow_p {
+    top: 20%;
+    font-size: 5.875rem;
+  }
+  #TOUR .tour_container {
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 744px) {
+  #jumbotron .tv_font {
+    font-size: 3.7rem;
+  }
+  #jumbotron .tv_img {
+    width: 20rem;
+    height: 10rem;
+    top: 7%;
+    left: 70%;
+  }
+  #ABOUT .about_txt {
+    font-size: 3.5rem;
+  }
+  .album .album_ul .album_li_img {
+    background: url(../image/album_front2.png) 97% 50% / cover no-repeat;
+  }
+  .album .album_ul .album_li_txt .album_p {
+    font-size: 1.45rem;
+    color: white;
+    -webkit-text-stroke: 0px;
+  }
+  .album .album_ul .album_li_txt .album_h3 {
+    font-size: 1.45rem;
+  }
+  #DISCOGRAPHY {
+    height: 50vh;
+    img {
+      width: 6.25rem;
+      height: 6.25rem;
+    }
+  }
+  #DISCOGRAPHY .discographhy_h2 {
+    margin-top: 40px;
+  }
+  #DISCOGRAPHY .movinicon {
+    height: 30rem;
+  }
+  #DISCOGRAPHY .discographhy_row_wrap {
+    max-width: 100%;
+  }
+  #coverflow .coverflow_p {
+    top: 30%;
+    font-size: 3rem;
+  }
+  #SHOP {
+    height: 40vh;
+    img {
+      width: 200px;
+      height: 200px;
+    }
+    p {
+      font-size: smaller;
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  #header {
+    .header_nav {
+      justify-content: space-around;
+      h1 {
+        display: none;
+      }
+      ul {
+        flex-direction: row;
+        a {
+          padding-right: 1.25rem;
+        }
+      }
+    }
+  }
+  .checkboard {
+    height: 10vh;
+  }
+  #jumbotron {
+    height: 10vh;
+  }
+  #jumbotron .tv_font {
+    font-size: 3rem;
+    top: 15%;
+  }
+  #jumbotron .tv_img {
+    width: 10rem;
+    height: 5rem;
+    top: 7%;
+    left: 67%;
+  }
+  #ABOUT {
+    .about_txt {
+      color: black;
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: white;
+      font-size: 3.75rem;
+      .edbanger {
+        top: 36%;
+        left: 9%;
+      }
+      .records {
+        top: 50%;
+        left: 14%;
+      }
+    }
+  }
+  .album {
+    height: 37vh;
+
+    .album_ul {
+      flex-direction: column;
+      .album_li_img {
+        height: 100%;
+        width: 100%;
+        background: url(../image/album_front2.png) 0% 0% / contain no-repeat;
+      }
+      .album_li_txt {
+        padding: 0 5% 5% 0;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  .youtube {
+    height: 50vh;
+  }
+
+  #DISCOGRAPHY {
+    height: 2300px;
+    .movinicon {
+      display: none;
+    }
+    img {
+      height: 12.5rem;
+      width: 12.5rem;
+    }
+    .icon {
+      padding-bottom: 11%;
+    }
+  }
+  #coverflow {
+    .coverflow_p {
+      top: 84%;
+      font-size: 1.5rem;
+    }
+  }
+  #SHOP {
+    height: 1000px;
+  }
+  #TOUR {
+    height: 600px;
+    background: url(../image/tour_bg2.jpg) 0% 0% / cover no-repeat;
+    .sydney {
+      padding-bottom: 10%;
+    }
+  }
+}
