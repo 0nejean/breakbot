@@ -538,6 +538,9 @@ body {
   #DISCOGRAPHY .icon {
     padding-bottom: 11%;
   }
+  #coverflow {
+    height: 80vh;
+  }
   #coverflow .coverflow_p {
     top: 84%;
     font-size: 1.5rem;
