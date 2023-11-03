@@ -492,19 +492,26 @@ body {
     top: 7%;
     left: 67%;
   }
+  #ABOUT {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   #ABOUT .about_txt {
     color: black;
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: white;
     font-size: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   #ABOUT .about_txt .edbanger {
-    top: 36%;
-    left: 7%;
+    position: relative;
   }
   #ABOUT .about_txt .records {
-    top: 50%;
-    left: 12%;
+    position: relative;
   }
   .album {
     height: 37vh;
